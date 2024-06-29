@@ -1,0 +1,12 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.movie-list__cards {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 85vh;
+}
