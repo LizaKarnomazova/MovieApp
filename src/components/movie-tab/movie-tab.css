@@ -4,13 +4,6 @@ ul {
     list-style-type: none;
 }
 
-.movie-list__cards {
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    min-height: 85vh;
-}
-
 .wrong-label {
     margin: 36px 20px;
     font-size: 40px;

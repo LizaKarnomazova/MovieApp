@@ -29,7 +29,7 @@ const MovieCard = (props) => {
     src: props.backdrop_path === null ? iconFace : `https://image.tmdb.org/t/p/w500${props.backdrop_path}`,
     name: correctionDescription(props.title, 29),
     date: props.release_date === '' ? null : format(props.release_date, 'LLLL dd, yyyy'),
-    description: correctionDescription(props.overview, 270),
+    description: correctionDescription(props.overview, 230),
   };
 
   function ratingColor(rateValue) {
@@ -63,7 +63,7 @@ const MovieCard = (props) => {
         </div>
       ) : (
         <div className="movie-сard__loaded">
-          <img src={card.src} height="125px" className="movie-сard__image" />
+          <img src={card.src} className="movie-сard__image" />
           <section className="movie-сard__mainInfo">
             <h2 className="mainInfo__name">{card.name}</h2>
             <span className="mainInfo__date">{card.date}</span>
